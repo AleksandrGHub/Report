@@ -12,12 +12,12 @@
 
         public void ShowDatasets()
         {
-            foreach (var soldier in _soldier.Select(player => new { player.Name, player.Rank }))
+            var soldiers = _soldier.Select(player => new { player.Name, player.Rank });
+
+            foreach (var soldier in soldiers)
             {
                 Console.WriteLine($"Имя: {soldier.Name}\tзвание: {soldier.Rank}");
             }
-
-            Console.ReadKey();
         }
 
         private void AddSoldiers()

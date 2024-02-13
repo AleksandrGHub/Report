@@ -4,9 +4,9 @@
     {
         static void Main(string[] args)
         {
-            Menu menu = new Menu();
+            Catalog catalog = new Catalog();
 
-            menu.Work();
+            catalog.ShowDatasets();
         }
     }
 }
