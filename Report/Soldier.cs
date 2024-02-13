@@ -14,10 +14,5 @@
         public string Weapon { get; private set; }
         public string Rank { get; private set; }
         public int ServiceLife { get; private set; }
-
-        public void ShowInfo()
-        {
-            Console.WriteLine($"{Name}\tвооружение: {Weapon}\tзвание: {Rank}\tсрок службы: {ServiceLife} месяцев");
-        }
     }
 }
